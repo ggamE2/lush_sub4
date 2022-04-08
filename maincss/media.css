@@ -1,0 +1,247 @@
+@charset "utf-8";
+
+/* 모바일 */
+@media screen and (max-width:639px) {
+
+/*visual*/
+.visual {
+    height: 330px;
+}
+
+.visual h2 {
+    top: 14%;
+    left: 6%;
+    font: normal 53.5px "Do Hyeon";
+    line-height: 0.9;
+}
+
+.visual h3 {
+    top: 43.5%;
+    left: 6%;
+    font: normal 17px "Malgun Gothic";
+}
+.visual h4 {
+    top: 52.5%;
+    left: 6%;
+    font: normal 11.5px "Gowun Dodum";
+}    
+
+.contents{width: 100%;}
+
+/*cont1*/    
+.contents .cont1{display:none; }
+    
+.contents .cont1_m{width: 100%; position: relative;  margin-top: 70px; height: 420px; overflow: hidden;}   
+.contents .cont1_m >div{width:54%; float: left; } 
+.contents .cont1_m>div:first-child{width:42%; margin-right: 4%;height: 350px;  background: #000;}    
+.contents .cont1_m>div:first-child img{width: 100%;}    
+.contents .cont1_m >div ul{}    
+.contents .cont1_m >div ul li{position: relative; width: 100%;}  
+.contents .cont1_m >div ul li:first-child{margin-bottom:6%;}
+.contents .cont1_m >div ul li img{width: 100%; }    
+.contents .cont1_m > div .txt0 { top:11%; left:5%; font:normal 16px "Malgun Gothic";}
+.contents .cont1_m > div .txt1 {position:absolute; top:15%; left:5%; font:normal 27px "Do Hyeon"; color:#fff;}
+.contents .cont1_m > div .txt2 {position:absolute; top:34%; left:5%; font:normal 15px "Gowun Dodum"; color:#fff;}
+.contents .cont1_m > div .txt3 {position:absolute; top:66%; left:5%;  width: 34%; height: 40px; line-height: 40px;font:normal "Malgun Gothic" 18px; background:rgba(0,0,0,0.8);text-align: center; color:#fff;}
+.contents .cont1_m > div:first-child .txt3 {position:absolute; top:60%; left:5%;  width: 30%; height: 40px; line-height: 40px;font:normal "Malgun Gothic" 18px; background:#000;transition:all 0.5s; text-align: center; color:#fff; border: 1px solid #fff;}    
+.contents .cont1_m > div .txt3:hover {color:#000;background:rgba(255,255,255,0.5);transition:all 0.5s; text-align: center;}    
+    
+    
+/*cont2*/    
+.contents .cont2 {
+    width: 95%; margin: 50px auto 0;}    
+.contents .cont2 ul li{width:45%; height: 330px; margin-right:10%; background: #fbfbfb;}     
+.contents .cont2 ul li:nth-child(2n){margin-right: 0; }
+
+.contents .cont2 ul li .txt1{font: normal 17px "Do Hyeon";  text-align: center;}
+.contents .cont2 ul li .txt2{font:normal 12px "Malgun Gothic"; margin-top: 3px; text-align: center;}
+.contents .cont2 ul li .txt3{font:bold 15px "Malgun Gothic"; margin-top: 5px; text-align: center;}    
+
+    
+/*sort*/    
+.contents .cont2 .sort{position: absolute; top:32%; left:80%; font:normal 18px "Malgun Gothic";}
+.contents .cont2 .sort select{ position: relative; height: 35px;}    
+    
+    
+.moving{margin-top: 60px;}      
+
+}
+
+
+/*  태블릿:width 1023px 미만 640px 이상 */
+@media screen and (min-width:640px) and (max-width:1024px) {
+.contents .cont1_m{display: none;}
+    
+    
+/*visual*/
+.visual {
+    height: 470px;
+}
+
+.visual h2 {
+    top: 15%;
+    left: 8%;
+    font: normal 80px "Do Hyeon";
+    line-height:0.9;/*line-height 보다 font를 먼저 지정해야 적용됨!!*/
+    letter-spacing: 10px;
+    
+    
+}
+
+.visual h3 {
+    top: 46%;
+    left: 8%;
+    font: normal 20px "Malgun Gothic";
+}
+
+.visual h4 {
+    top: 55%;
+    left: 8%;
+    font: normal 15px "Gowun Dodum";
+}        
+
+/*contents*/
+.contents {
+    width: 96%;
+    margin: 0 auto;
+}
+
+/*cont1*/
+.contents .cont1 {
+    width: 100%;
+    height: 300px;
+    margin: 60px auto 0;
+}
+
+.contents .cont1 > div {
+    margin-right: 1%;
+}
+.contents .cont1 > div:first-child{
+    width:25%; height: 270px; margin-top: 30px;}
+
+.contents .cont1 > div:nth-child(2){
+    width:36.5%; 
+}
+.contents .cont1 > div:nth-child(3){
+    width:36.5%;
+
+}
+
+.contents .cont1 > div img {
+    width: 100%;
+}
+
+.contents .cont1 > div .txt0 { top:15%; left:5%; font:normal 16px "Malgun Gothic";}
+.contents .cont1 > div .txt1 {position:absolute; top:12%; left:5%; font:normal 29px "Do Hyeon"; color:#fff;}
+.contents .cont1 > div .txt2 {position:absolute; top:36%; left:5%; font:normal 14px "Gowun Dodum"; color:#fff;}
+.contents .cont1 > div .txt3 {top:63%; left:5%;  width: 36%; height: 48px; line-height: 48px;font:normal "Malgun Gothic" 18px;}
+
+
+.contents .cont1 > div:first-child .txt0 { top:9%; left:5%; font:normal 16px "Malgun Gothic";}
+.contents .cont1 > div:first-child .txt1 {top:16%; left:5%; font:normal 27px "Do Hyeon"; }
+.contents .cont1 > div:first-child .txt2 {top:42%; left:5%; font:normal 15px "Gowun Dodum"; }
+
+.contents .cont1 > div:first-child .txt3 {top:65%; left:5%; width: 52%; height: 42px; line-height: 42px; font:normal "Malgun Gothic" 18px;}    
+    
+.contents .cont2 {margin: 80px auto 0;}    
+.contents .cont2 ul li{width:29%; height: 390px; margin-right:6.5%; background: #fbfbfb;}     
+.contents .cont2 ul li:nth-child(3n){margin-right: 0; }
+
+.contents .cont2 ul li .txt1{font: normal 17px "Do Hyeon";  text-align: center;}
+.contents .cont2 ul li .txt2{font:normal 12px "Malgun Gothic"; margin-top: 3px; text-align: center;}
+.contents .cont2 ul li .txt3{font:bold 15px "Malgun Gothic"; margin-top: 5px; text-align: center;}      
+    
+.moving{margin-top: 70px;}    
+}
+
+
+
+
+/*pc*/
+@media all and (min-width:1024px) {
+.contents .cont1_m{display:none; }    
+    
+.visual {
+}
+
+.visual h2 {
+    font: normal 95px "Do Hyeon";
+    line-height: 0.9;
+    letter-spacing: 15px;
+    top:14%;
+    left:15%;
+}
+
+.visual h3 {
+    top: 42%;
+    left: 15%;
+    font: normal 24px "Malgun Gothic";
+}
+
+.visual h4 {
+    top: 52%;
+    left: 15%;
+    font: normal 17px "Gowun Dodum";
+}    
+
+
+
+.contents {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*cont1*/
+.contents .cont1 {
+    margin: 120px auto 0;
+}
+
+.contents .cont1 {
+    height: 400px;
+    margin: 80px auto 0;
+}
+
+.contents .cont1 > div {
+    margin-right: 4%;
+}
+.contents .cont1 > div:first-child{
+    width:22%;margin-top:50px;}
+
+.contents .cont1 > div:nth-child(2){
+    width:35%; 
+}
+.contents .cont1 > div:nth-child(3){
+    width:35%;
+
+}
+
+.contents .cont1 > div img {
+    width: 100%;
+}
+
+.contents .cont1 > div .txt0 { top:15%; left:5%; font:normal 16px "Malgun Gothic";}
+.contents .cont1 > div .txt1 {position:absolute; top:26%; left:5%; font:normal 29px "Do Hyeon"; color:#fff;}
+.contents .cont1 > div .txt2 {position:absolute; top:40%; left:5%; font:normal 17px "Gowun Dodum"; color:#fff;}
+.contents .cont1 > div .txt3 {top:63%; left:5%;  width: 30%; height: 48px; line-height: 48px;font:normal "Malgun Gothic" 18px;}
+
+
+.contents .cont1 > div:first-child .txt0 { top:9%; left:5%; font:normal 16px "Malgun Gothic";}
+.contents .cont1 > div:first-child .txt1 {top:14%; left:5%; font:normal 29px "Do Hyeon"; }
+.contents .cont1 > div:first-child .txt2 {top:31%; left:5%; font:normal 17px "Gowun Dodum"; }
+
+.contents .cont1 > div:first-child .txt3 {top:46%; left:5%; width: 40%; height: 48px; line-height: 48px; font:normal "Malgun Gothic" 18px;}
+    
+
+    
+.contents .cont2 {margin: 80px auto 0;}    
+.contents .cont2 ul li{width:20%; height: 430px; margin-right:6.666666666666667%; background: #fbfbfb;}     
+.contents .cont2 ul li:nth-child(4n){margin-right: 0; }
+
+.contents .cont2 ul li .txt1{font: normal 19px "Do Hyeon";  text-align: center;}
+.contents .cont2 ul li .txt2{font:normal 12px "Malgun Gothic";text-align: center;}
+.contents .cont2 ul li .txt3{font:bold 15px "Malgun Gothic"; margin-top: 6px; text-align: center;}    
+    .moving{margin-top: 100px;}
+
+}
+    
+

@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+
+
+/*visual*/
+.visual {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 600px;
+}
+
+.visual img {
+    width: 100%;
+}
+
+.visual h2 {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:10%;
+    text-align: left;
+    color: rgba(255,255,255,0.6);
+}
+
+.visual h3 {
+    position: absolute;
+    text-align: left;
+    color: #fbfbfb;
+}
+
+.visual h4 {
+    position: absolute;
+    text-align: left;
+    color: #fbfbfb;
+}
+
+
+/*contents*/
+.contents {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*cont1*/
+.contents .cont1 {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.contents .cont1 > div {
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.contents .cont1 > div:first-child{
+background:#000;}
+
+.contents .cont1 > div:nth-child(2){
+
+}
+.contents .cont1 > div:nth-child(3){
+    margin-right: 0%;
+}
+
+.contents .cont1 > div img {
+    width: 100%;
+}
+
+.contents .cont1 > div .txt0 {position:absolute;color:#fff;}
+.contents .cont1 > div .txt1 {position:absolute;color:#fff;}
+.contents .cont1 > div .txt2 {position:absolute; color:#fff;}
+.contents .cont1 > div .txt3 {position:absolute; background: #000; text-align: center; font:normal "Malgun Gothic" 18px; color:#fff; box-sizing: border-box;   }
+
+.contents .cont1 > div .txt3:hover{color:#000; background:rgba(255,255,255,0.5);transition:all 0.5s;}
+.contents .cont1 > div:first-child .txt3:hover{color:#000; background:rgba(255,255,255,0.5);transition:all 0.5s;}
+
+.contents .cont1 > div:first-child .txt0 {position:absolute; top:9%; left:5%; font:normal 16px "Malgun Gothic"; color:#fff;}
+.contents .cont1 > div:first-child .txt1 {position:absolute; top:14%; left:5%; font:normal 29px "Do Hyeon"; color:#fff;}
+.contents .cont1 > div:first-child .txt2 {position:absolute; top:31%; left:5%; font:normal 17px "Gowun Dodum"; color:#fff;}
+
+.contents .cont1 > div:first-child .txt3 {position:absolute; top:46%; left:5%; width: 40%; height: 48px; line-height: 48px; background: #000; text-align: center; font:normal "Malgun Gothic" 18px; color:#fff; box-sizing: border-box;  border:1px solid #fff;}
+
+.contents .cont1 > div h2 {}
+
+
+
+.contents .cont2{position: relative; width: 100%; margin: 80px auto 0;  }
+.contents .cont2 h2{font: normal 35px "Do Hyeon";}
+.contents .cont2 .line{position: relative; width: 100%; margin-top: 20px; height: 2px; background: #000;}
+.contents .cont2 .sort{position: absolute; top:32%; left:89%; font:normal 18px "Malgun Gothic";}
+.contents .cont2 .sort select{ position: relative; height: 35px;}
+.contents .cont2 ul{width: 100%;}
+.contents .cont2 ul li{position: relative; float: left;}
+.contents .cont2 ul li img{width: 100%;}
+
+
+.contents .cont2 ul li .icon1{position:absolute; transform: translate(-50%,-50%); top:39%; left:85%; opacity:0;  }
+.contents .cont2 ul li .icon1 img{width:100%;}
+.contents .cont2 ul li .icon1:hover{filter:invert(1000%) sepia(95%) brightness(-107%) contrast(103%);}
+.contents .cont2 ul li .icon2{ position:absolute; transform: translate(-50%,-50%);  top:47%; left:85%; opacity: 0;}
+.contents .cont2 ul li .icon2 img{width:90%;}
+.contents .cont2 ul li .icon2:hover{filter: invert(0%) sepia(95%) brightness(-107%) contrast(103%);}
+.contents .cont2 ul li:hover .icon1{opacity: 1;}
+.contents .cont2 ul li:hover .icon2{opacity: 1;}   
+
+.contents .cont2 ul li .txt1{}
+.contents .cont2 ul li .txt2{color:#d5d5d5;}
+.contents .cont2 ul li .txt3{}
+
+
+/*moving*/
+.moving {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: url(../images/moving_icon.png) 0 center / 500px repeat-x;
+    animation: movebg 5s linear infinite;
+    background: filter: invert(100%) sepia(0%) saturate(5479%) hue-rotate(345deg) brightness(115%) contrast(90%);
+}
+
+@keyframes movebg {
+    0% {
+        background-position: 0 center;
+    }
+
+    100% {
+        background-position: -500px center;
+    }
+
+    /*속도*/
+} 
+    
